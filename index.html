@@ -4,253 +4,193 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>report7</title>
     <link rel="stylesheet" href="./css/reset.css">
-    <style>
-        .wrap{
-            width:1200px;
-            margin:0 auto;
-            overflow: hidden;
-        }
-        .clearfix::after{
-            content:'';
-            display:block;
-            clear:both;
-        }
-        .header,.footer{
-            height:100px;
-        }
-        .slider{
-            height: 300px;
-        }
-        .notice,.gallery,.banner{
-            float: left;
-            width: 33.3333%;
-            height: 200px;
-        }
-         /* 헤더 스타일 */
-         .header{
-            height: 100px;
-            display: flex;
-            justify-content: space-between;
-            background-color: #333;
-            padding: 20px 30px;
-        }
-        .header h1{
-           font-size: 100px;
-           font-weight: 900;
-           color: #fff;
-           float: left;
-        }
-        .nav{
-            float: right; 
-        }
-        .main-nav li{
-            float: left;
-            padding: 10px 20px;
-        }
-        .main-nav li:hover{
-            background-color: #000;
-            color: #fff;
-        }
-        .sub-nav{
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 140px;
-            z-index: 1000;
-            background-color: #333;
-        }
-
-
-        /* 슬라이더 스타일 */
-        h3{
-            text-indent: -9999999px;
-        }
-        .slider{
-            width:640px;
-            margin:0 auto;
-
-            position:relative;
-        }
-        .slides{
-            position:relative;
-            width:100%;
-            height:360px;
-            overflow:hidden;
-        }
-        .slide{
-            position:absolute;
-            left:0;
-            top:0;
-            opacity:0;
-            transition:0.3s;
-        }
-        .slide.active{
-            opacity:1;
-        }
-        .pager{
-            position:absolute;
-            left:0;
-            right:0;
-            bottom:40px;
-
-            display:flex;
-            flex-flow:row nowrap;
-            justify-content:center;
-        }
-        .pager span{
-            width:15px;
-            height:15px;
-            margin:0 10px;
-            border-radius:50%;
-            background-color:#000;
-            text-indent:-99999px;
-            cursor:pointer;
-            transition:0.3s;
-        } 
-        .pager span.active{
-            background-color:#fff;
-        }       
-    </style>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>KYeRim</title>
 </head>
 <body>
     <div class="wrap">
         <header class="header">
-            <div class="row clearfix">
-                <h1>RePort</h1>
-                <nav class="nav">
-                    <ul class="main-nav clearfix">
-                        <li><a href="#">MENU-1</a></li>
-                        <li><a href="#">MENU-2</a></li>
-                        <li><a href="#">MENU-3</a></li>
-                        <li><a href="#">MENU-4</a></li>
-                    </ul>
-                    <ul class="sub-nav">
-                        <li><a href="#">SubMenu-1</a></li>
-                        <li><a href="#">SubMenu-2</a></li>
-                        <li><a href="#">SubMenu-3</a></li>
-                        <li><a href="#">SubMenu-4</a></li>
-                    </ul>
-                    <ul class="sub-nav">
-                        <li><a href="#">SubMenu-1</a></li>
-                        <li><a href="#">SubMenu-2</a></li>
-                        <li><a href="#">SubMenu-3</a></li>
-                        <li><a href="#">SubMenu-4</a></li>
-                    </ul>
-                    <ul class="sub-nav">
-                        <li><a href="#">SubMenu-1</a></li>
-                        <li><a href="#">SubMenu-2</a></li>
-                        <li><a href="#">SubMenu-3</a></li>
-                        <li><a href="#">SubMenu-4</a></li>
-                    </ul>
-                    <ul class="sub-nav">
-                        <li><a href="#">SubMenu-1</a></li>
-                        <li><a href="#">SubMenu-2</a></li>
-                        <li><a href="#">SubMenu-3</a></li>
-                        <li><a href="#">SubMenu-4</a></li>
-                    </ul>
-                </nav>
+            <div class="container">
+                <div class="inner">
+                    <h1 class="logo"><a href="#">KYeRim⧫</a></h1>
+                    <nav class="nav gnb">
+                        <ul class="nav-level1">
+                            <li>
+                                <a href="#">MENU-1</a>
+                                <ul class="nav-level2">
+                                    <li><a href="#">SubMenu-1</a></li>
+                                    <li><a href="#">SubMenu-2</a></li>
+                                    <li><a href="#">SubMenu-3</a></li>
+                                    <li><a href="#">SubMenu-4</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">MENU-2</a>
+                                <ul class="nav-level2">
+                                    <li><a href="#">SubMenu-1</a></li>
+                                    <li><a href="#">SubMenu-2</a></li>
+                                    <li><a href="#">SubMenu-3</a></li>
+                                    <li><a href="#">SubMenu-4</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">MENU-3</a>
+                                <ul class="nav-level2">
+                                    <li><a href="#">SubMenu-1</a></li>
+                                    <li><a href="#">SubMenu-2</a></li>
+                                    <li><a href="#">SubMenu-3</a></li>
+                                    <li><a href="#">SubMenu-4</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">MENU-4</a>
+                                <ul class="nav-level2">
+                                    <li><a href="#">SubMenu-1</a></li>
+                                    <li><a href="#">SubMenu-2</a></li>
+                                    <li><a href="#">SubMenu-3</a></li>
+                                    <li><a href="#">SubMenu-4</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </header>
-        <section class="sec slider">
-            <div class="slides">
-                <div class="slide slide01 active"><img src="./images/slider1.jpg" alt="slide01"></div>
-                <div class="slide slide02"><img src="./images/slider2.jpg" alt="slide02"></div>
-                <div class="slide slide03"><img src="./images/slider3.jpg" alt="slide03"></div>
-                <div class="slide slide04"><img src="./images/slider4.jpg" alt="slide04"></div>
-                <div class="slide slide05"><img src="./images/slider5.jpg" alt="slide05"></div>
+        <section class="sec slider" id="slider">
+            <div class="container">
+                <div class="row">
+                    <h2 class="sec-tit">sldie</h2>
+                    <div class="slide slide01">
+                        <div class="img-box"><a href="#"><img src="./images/slider01.jpg" alt="슬라이드 이미지1" title="슬라이드 이미지1 페이지 이동"></a></div>
+                    </div>
+                    <div class="slide slide02">
+                        <div class="img-box"><a href="#"><img src="./images/slider02.jpg" alt="슬라이드 이미지2" title="슬라이드 이미지2 페이지 이동"></a></div>
+                    </div>
+                    <div class="slide slide03">
+                        <div class="img-box"><a href="#"><img src="./images/slider03.jpg" alt="슬라이드 이미지3" title="슬라이드 이미지3 페이지 이동"></a></div>
+                    </div>
+                </div>
             </div>
-            <div class="pager">
-                <span class="active" onclick="
-                    let _span = document.getElementsByTagName('span');
-                    let _slide = document.getElementsByClassName('slide');
-                    let cnt = 0;
-                    while(cnt<=4){
-                        _span[cnt].classList.remove('active');
-                        _slide[cnt].classList.remove('active');
-                        cnt++;
-                    }
-                    _span[0].classList.add('active');
-                    _slide[0].classList.add('active');
-                ">1</span>
-                <span onclick="
-                    let _span = document.getElementsByTagName('span');
-                    let _slide = document.getElementsByClassName('slide');
-                    let cnt = 0;
-                    while(cnt<=4){
-                        _span[cnt].classList.remove('active');
-                        _slide[cnt].classList.remove('active');
-                        cnt++;
-                    }
-                    _span[1].classList.add('active');
-                    _slide[1].classList.add('active');
-                ">2</span>
-                <span onclick="
-                    let _span = document.getElementsByTagName('span');
-                    let _slide = document.getElementsByClassName('slide');
-                    let cnt = 0;
-                    while(cnt<=4){
-                        _span[cnt].classList.remove('active');
-                        _slide[cnt].classList.remove('active');
-                        cnt++;
-                    }
-                    _span[2].classList.add('active');
-                    _slide[2].classList.add('active');
-                ">3</span>
-                <span onclick="
-                    let _span = document.getElementsByTagName('span');
-                    let _slide = document.getElementsByClassName('slide');
-                    let cnt = 0;
-                    while(cnt<=4){
-                        _span[cnt].classList.remove('active');
-                        _slide[cnt].classList.remove('active');
-                        cnt++;
-                    }
-                    _span[3].classList.add('active');
-                    _slide[3].classList.add('active');
-                ">4</span>
-                <span onclick="
-                    let _span = document.getElementsByTagName('span');
-                    let _slide = document.getElementsByClassName('slide');
-                    let cnt = 0;
-                    while(cnt<=4){
-                        _span[cnt].classList.remove('active');
-                        _slide[cnt].classList.remove('active');
-                        cnt++;
-                    }
-                    _span[4].classList.add('active');
-                    _slide[4].classList.add('active');
-                ">5</span>
-            </div>           
         </section>
-        <section class="sec main clearfix">
-            <article class="art notice">
-                <h3>공지사항</h3>
-                <p>[긴급] 코로나19 오미크론 변이에 따른 영업시간 조정</p>
-                <p>새봄맞이 3월 신규회원 이벤트</p>
-                <p>3월1일 / 3월 9일 영업시간 조정안내</p>
-            </article>
-            <article class="art gallery">갤러리</article>
-            <article class="art banner">배너</article>
+        <section class="sec main">
+            <div class="container">
+                <h2>메인</h2>
+                <div class="inner">
+                    <article class="notice">
+                        <h3>notice</h3>
+                        <div class="notice-tit">
+                            <div class="title">제목</div>
+                            <div class="date">날짜</div>
+                            <div class="writer">작성자</div>
+                        </div>
+                        <div class="notice-txt">
+                            <div class="title">[event]Lorem ipsum dolor sit amet.</div>
+                            <div class="date">2022-01-22</div>
+                            <div class="writer">oh nyang</div>
+                        </div>
+                        <div class="notice-txt">
+                            <div class="title">Lorem ipsum dolor sit amet consectetur.</div>
+                            <div class="date">2022-02-08</div>
+                            <div class="writer">ye nyang</div>
+                        </div>
+                        <div class="notice-txt">
+                            <div class="title">Lorem ipsum dolor sit amet.</div>
+                            <div class="date">2022-02-12</div>
+                            <div class="writer">oh nyang</div>
+                        </div>
+                        <div class="notice-txt">
+                            <div class="title">Lorem ipsum dolor sit amet consectetur.</div>
+                            <div class="date">2022-02-22</div>
+                            <div class="writer">ye nyang</div>
+                        </div>
+                    </article>
+                    <article class="gallery">
+                        <h3>gallery</h3>
+                        <ul class="gallery-list">
+                                <li>
+                                    <div class="img-box"><a href="#"><img src="images/img01.jpg" alt="이미지1"></a></div>
+                                </li>
+                                <li>
+                                    <div class="img-box"><a href="#"><img src="images/img02.jpg" alt="이미지2"></a></div>
+                                </li>
+                                <li>
+                                    <div class="img-box"><a href="#"><img src="images/img03.jpg" alt="이미지3"></a></div>
+                                </li>
+                        </ul>
+                    </article>
+                    <article class="banner">
+                        <h3>banner</h3>
+                        <a href="#"><img src="./images/banner.png" alt="배너 이미지"></a>
+                    </article>
+                </div>
+            </div>
         </section>
         <footer class="footer">
             <div class="container">
-                <div class="footer-logo">
-                    <h2>RePort</h2>
-                </div>
-                <p>Copyright</p>
-                <div class="family-site">
-                    <label for="소속">family</label>
-                    <select id="소속">
-                      <option>오냥 바로가기</option>
-                      <option>예냥 바로가기</option>
-                      <option>고냥 바로가기</option>
+                <div class="inner">
+                    <h2><a href="#">KYeRim</a></h2>
+                    <address>
+                        Copyright KYeRim
+                    </address>
+                    <select>
+                        <option disabled>패밀리 사이트</option>
+                        <option value="01">오냥 사이트</option>
+                        <option value="02">예냥 사이트</option>
+                        <option value="03">냥냥 사이트</option>
+                        <option value="01">고냥 사이트</option>
                     </select>
-                  
                 </div>
             </div>
         </footer>
     </div>
+    <section class="sec modal-popup">
+        <div class="modal-container">
+            <button type="button" class="btn-close">X</button>
+            <div class="modal-txt modal-txt01">
+                <h3>[event]Lorem ipsum dolor sit amet.</h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>
+                    Nam nisi qui ipsum molestias dignissimos doloribus nihil <br>
+                    quidem voluptates quos, autem aspernatur obcaecati perspiciatis <br>
+                    at inventore similique maiores distinctio consectetur dolorem. <br>
+                </p>
+            </div>
+            <div class="modal-txt modal-txt02">
+                <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>
+                    Nam nisi qui ipsum molestias dignissimos doloribus nihil <br>
+                    quidem voluptates quos, autem aspernatur obcaecati perspiciatis <br>
+                    at inventore similique maiores distinctio consectetur dolorem. <br>
+                </p>
+            </div>
+            <div class="modal-txt modal-txt03">
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>
+                    Nam nisi qui ipsum molestias dignissimos doloribus nihil <br>
+                    quidem voluptates quos, autem aspernatur obcaecati perspiciatis <br>
+                    at inventore similique maiores distinctio consectetur dolorem. <br>
+                </p>
+            </div>
+            <div class="modal-txt modal-txt04">
+                <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>
+                    Nam nisi qui ipsum molestias dignissimos doloribus nihil <br>
+                    quidem voluptates quos, autem aspernatur obcaecati perspiciatis <br>
+                    at inventore similique maiores distinctio consectetur dolorem. <br>
+                </p>
+            </div>           
+        </div>
+    </section>
+
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/myscript.js"></script>
+</body>
+</html>
 </body>
 </html>

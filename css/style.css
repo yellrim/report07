@@ -16,7 +16,7 @@
 }
 .wrap{
     width: 100%;
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     display: grid;
     grid-auto-rows: 100px;
@@ -24,7 +24,6 @@
     overflow: hidden;
 }
 .container{
-    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -42,8 +41,6 @@
     border-bottom: 1px solid #222328;
 }
 .header .inner{
-    /* display: flex; */
-    /* flex-flow: row nowrap; */
     display: grid;
     grid-template-columns: repeat(2,auto);
     justify-content: space-between;
@@ -82,7 +79,6 @@
 .nav-level1>li:hover{
     border-bottom-color: rgb(84, 121, 189);
     color: rgb(84, 121, 189);
-    /* transform: perspective(500px) rotateY(360deg); */
 }
 .nav-level2{
     display: none;
@@ -101,7 +97,7 @@
 .nav-level2 li{
     padding: 0.3em;
 }
-.nav-level2 li:hover{
+.nav-level2 a:hover{
     background-color: #fff;
     color: rgb(84, 121, 189);
 }
